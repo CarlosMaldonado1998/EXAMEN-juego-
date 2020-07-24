@@ -22,7 +22,9 @@
   <meta name="theme-color" content="#fafafa">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-<body>
+
+
+<body >
 
   <!-- Add your site or application content here -->
   <div id="Cabecera"  >
@@ -40,34 +42,31 @@
         </div>
         <div class="col-2" id="Texto-Jugador1" >
           <h3 class="text-white">Jugador 1</h3>
-          <h2 id="status" style="clear:left;" class="text-white"></h2>
+          <h2 id="status" style="clear:left; font-size: 15px;" class="text-white"></h2>
         </div>
         <!--Button Jugador 1  -->
         <div class="col-2">
-          <button onclick="rollDice()" type="button" class="btn btn-primary text-dark border-dark float-right">Lanzar J1</button>
+          <button onclick="rollDice()" id="BtnJug1" type="button" class="btn btn-primary text-dark border-dark float-right">Lanzar J1</button>
         </div>
         <!--Dado -->
         <div class="col-2 center-block"  style="display: flex">
-          <div id="die1" class="dice">1</div>
-          <button >Listo</button>
-          <div id="die2" class="dice">1</div>
+          <div id="die1" class="dice">0</div>
+          <button id="Comprobacion">Listo</button>
+          <div id="die2" class="dice">0</div>
            </div>
         <!--Button Jugador 2  -->
         <div class="col-2">
-          <button onclick="rollDice2()" type="button" class="btn btn-primary text-dark border-dark">Lanzar J2</button>
+          <button onclick="rollDice2()"  id="BtnJug2" type="button" class="btn btn-primary text-dark border-dark">Lanzar J2</button>
         </div>
 
         <div class="col-2" id="Texto-Jugador2">
           <h3 class="text-white">Jugador 1</h3>
-          <h2 id="status2" style="clear:left;" class="text-white"></h2>
+          <h2 id="status2" style="clear:left; font-size: 15px;" class="text-white"></h2>
         </div>
         <!--Imagen Jugador 2  -->
         <div class="col-1">
           <img class="Image2" src="img/avatar2.png" >
         </div>
-
-
-
 
       </div>
 
@@ -76,12 +75,15 @@
     <div id="Juego" >
       <div class="row">
         <div class="col-10">
-            <div>
+            <div class="pd-2 pt-2  ">
 
-              <h3>Jugador 1</h3>
+              <h3 class="pl-3">Jugador 1</h3>
+              <p class="pb-0 pl-3 mb-0 ">Inicio</p>
               <!-- Camino 1 -->
               <div class="Mapa" style="padding: 10px 10px 10px 10px">
-                <div CLASS="CuadradoInicio_Fin"> </div>
+                <div class="Cuadrado ColorIni_Fin">
+                  <div class='ficha text-white text-center'></div>
+                </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
@@ -102,16 +104,11 @@
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
-
-                <div CLASS="CuadradoInicio_Fin"> </div>
+                <div CLASS="Cuadrado"> </div>
 
 
               </div>
-
-              <h3>Jugador 2</h3>
-              <!-- Camino 2 -->
               <div class="Mapa" style="padding: 10px 10px 10px 10px">
-                <div CLASS="CuadradoInicio_Fin"> </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
@@ -132,19 +129,79 @@
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
                 <div CLASS="Cuadrado"> </div>
+                <div CLASS="Cuadrado"> </div>
+                <div CLASS="Cuadrado ColorIni_Fin"> </div>
+              </div>
 
-                <div CLASS="CuadradoInicio_Fin"> </div>
+              <p class="text-right pr-4 pb-0 mb-0">Fin</p>
+              <!--Inicio de camino Jugador 2 -->
 
+
+              <h3 class="pl-3 pt-0">Jugador 2</h3>
+              <p class="pb-0 pl-3 mb-0 ">Inicio</p>
+              <!-- Camino 2 -->
+              <div class="Mapa2" style="padding: 10px 10px 10px 10px">
+                <div CLASS="Cuadrado2 ColorIni_Fin">
+                  <div class='ficha2 text-white text-center'></div>
+                </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2 "> </div>
+              </div>
+
+              <div class="Mapa2" style="padding: 10px 10px 10px 10px">
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+                <div CLASS="Cuadrado2"> </div>
+
+                <div CLASS="Cuadrado2 ColorIni_Fin"> </div>
 
               </div>
+              <p class="text-right pr-4">Fin</p>
             </div>
 
         </div>
 
-        <div class="col-2">
+        <div class="col-2 pt-5">
           <div>
             <!-- Info  -->
-            <h2>Instrucciones a seguir</h2>
+            <h2 style="font-size: 20px;">Instrucciones a seguir</h2>
             <ol>
               <li>5 sentadillas</li>
               <li>5 saltos</li>
@@ -156,8 +213,6 @@
               <li>5 diamantes </li>
               <li>Descanso </li>
               <li>Gana 5 flexiones </li>
-
-
             </ol>
           </div>
         </div>

@@ -53,21 +53,29 @@ button{
 
 }
 .Cuadrado{
+  position: relative;
   width: 50px;
   height: 50px;
   background-color: #CEE5F2;
   border: 1px solid black;
 }
-.CuadradoInicio_Fin{
+.Cuadrado2{
+  position: relative;
   width: 50px;
   height: 50px;
+  background-color: #CEE5F2;
+  border: 1px solid black;
+}
+.ColorIni_Fin{
   background-color: darkred;
   border: 1px solid black;
 }
 .Mapa{
   display: flex;
 }
-
+.Mapa2{
+  display: flex;
+}
 div.dice{
   float:left;
   width:32px;
@@ -77,4 +85,23 @@ div.dice{
   font-size:24px;
   text-align:center;
   margin:5px;
+}
+
+.ficha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-color: #000000;
+}
+.ficha2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25px;
+  height: 25px;
+  background-color: #000000;
 }
