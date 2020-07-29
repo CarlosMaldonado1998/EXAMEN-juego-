@@ -25,7 +25,8 @@
 
 
 <body >
-      <embed src="audio/fondo.mp3" type="audio/mp3" autostart="true" ></embed>
+  <audio src="audio/fondo.mp3"  type="audio/mp3" autoplay loop ></audio>
+
   <!-- Add your site or application content here -->
   <div id="Cabecera" >
     <h1 class="text-white" >Puedes llegar a la meta sin sudar</h1>
@@ -230,8 +231,14 @@
     <li>El ganador podra penalizar al perdedor</li>
   </ol>
   <p><strong>¿Aceptas el reto?</strong> </p>
-  <button   onclick="acepta();" type="button" class="btn btn-primary text-dark border-dark" >Aceptar</button>
-  <button   onclick="noacepta();" type="button" class="btn btn-primary text-dark border-dark">Cancelar</button>
+
+  <div class="row">
+    <div class="col-12 text-center" >
+      <button  onclick="acepta();" type="button" class="btn btn-primary text-dark border-dark" >Aceptar</button>
+      <button   onclick="noacepta();" type="button" class=" btn btn-primary text-dark border-dark">Cancelar</button>
+    </div>
+  </div>
+
 
 </div>
 
