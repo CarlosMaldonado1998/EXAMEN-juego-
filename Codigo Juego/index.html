@@ -25,9 +25,9 @@
 
 
 <body >
-
+      <embed src="audio/fondo.mp3" type="audio/mp3" autostart="true" ></embed>
   <!-- Add your site or application content here -->
-  <div id="Cabecera"  >
+  <div id="Cabecera" >
     <h1 class="text-white" >Puedes llegar a la meta sin sudar</h1>
     <h4 class="text-white" >Grupo 3</h4>
   </div>
@@ -201,7 +201,7 @@
         <div class="col-2 pt-5">
           <div>
             <!-- Info  -->
-            <h2 style="font-size: 20px;">Instrucciones a seguir</h2>
+            <h2 style="font-size: 20px;">Retos</h2>
             <ol>
               <li>5 sentadillas</li>
               <li>5 saltos</li>
@@ -219,9 +219,22 @@
 
       </div>
     </div>
-
-
   </div>
+<div id="PanelInfo">
+  <h1><strong>Bienvenidos jugadores</strong></h1>
+  <p>Antes de empezar el juego deben saber las reglas</p>
+  <ol>
+    <li>Cada jugador tiene un turno para lanzar el dado</li>
+    <li>Cuando una ficha se mueve aparecera en ella un numero, el cual indica el reto que deben cumplir</li>
+    <li>El reto debe ser llevado a cabo de forma inmediata</li>
+    <li>El ganador podra penalizar al perdedor</li>
+  </ol>
+  <p><strong>¿Aceptas el reto?</strong> </p>
+  <button   onclick="acepta();" type="button" class="btn btn-primary text-dark border-dark" >Aceptar</button>
+  <button   onclick="noacepta();" type="button" class="btn btn-primary text-dark border-dark">Cancelar</button>
+
+</div>
+
 
 
 

@@ -11,8 +11,25 @@
   background-color: #CEE5F2;
   height: 80%;
   margin: 0px;
-padding:  20px 20px 20px ;
+  padding:  20px 20px 20px ;
+
 }
+#PanelInfo{
+  background-color: #CEE5F2;
+  height: 80%;
+  margin: 0px;
+  padding:  20px 20px 20px ;
+
+}
+#PanelInfo h1 {
+  text-align: center;
+  font-size: 45px;
+}
+#PanelInfo p {
+  text-align: center;
+  font-size: 35px;
+}
+
 
 #Info-Jugador{
   background-color: #637081;
