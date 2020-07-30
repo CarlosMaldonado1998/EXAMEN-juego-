@@ -2,12 +2,16 @@ $(document).ready(function () {
   $('#BtnJug2').attr("disabled", true);
   $('#Comprobacion').attr("disabled", true);
   document.getElementById('PanelInfo').style.display="block";
-  document.getElementById('Cuerpo').style.display="none"
+  document.getElementById('Cuerpo').style.display="none";
+
+
+
 })
 
 function acepta(){
   document.getElementById('Cuerpo').style.display="block";
   document.getElementById('PanelInfo').style.display="none";
+  $(".audio")[0].play();
 }
 function noacepta(){
   alert("cobarde");
